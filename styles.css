@@ -1,0 +1,186 @@
+/* Custom properties */
+
+:root {
+  /* colors */
+  --clr-white: 0 0% 100%; /*hsl(0, 0%, 100%)*/
+  --clr-title-blue: 212 27% 19%; /*hsl(212, 27%, 19%)*/
+  --clr-content-blue: 232 10% 55%; /*hsl(232, 10%, 55%)*/
+  --clr-section-blue: 213 9% 39%; /*hsl(213, 9%, 39%)*/
+  --clr-subheading-grey: 210 4% 67%; /*hsl(210, 4%, 67%)*/
+
+  /* font families */
+  --ff-title: "Fraunces", serif;
+  --ff-content: "Barlow", sans-serif;
+}
+
+/* CSS Resets */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* utility classes */
+
+.flex {
+    display: flex;
+}
+
+.grid {
+    display: grid;
+}
+
+.d-block {
+    display: block;
+}
+
+.container {
+    margin-inline: auto;
+    max-width: 80rem;
+  }
+
+  .uppercase {
+    text-transform: uppercase;
+  }
+
+  /* ---------------------------------------------- */
+  .title {
+    font-family: var(--ff-title);
+    color: hsl(var(--clr-title-blue));
+    font-size: 2.75rem;
+    font-weight: 900;
+    line-height: 3rem;
+  }
+
+  .content {
+    font-family: var(--ff-content);
+    color: hsl(var(--clr-content-blue));
+    font-size: 1.5rem;
+    padding-inline: 0.75rem;
+  }
+
+  /* ---------------------------------------------- */
+
+  .header {
+    justify-content: space-between;
+    padding-inline: 1.25em;
+    padding-top: 1rem;
+    height: 3.5rem;
+    width: 100%;
+  }
+
+  .logo {
+    text-decoration: none;
+    font-size: 1rem;
+    color: hsl(var(--clr-white));
+    font-family: var(--ff-content);
+    font-weight: 900;
+  }
+  
+  .navbar {
+    display: inline-block;
+  }
+
+  #home {
+    background: url(/images/mobile/image-header.jpg) no-repeat center bottom;
+    background-size: cover;
+    height: 100vh;
+  }
+
+  .home-content {
+    text-align: center;
+    height: calc(100vh - 3.5rem);
+    place-items: center;
+  }
+
+  .home-title {
+    font-size: 3rem;
+    font-family: var(--ff-title);
+    letter-spacing: 0.45rem;
+    color:hsl(var(--clr-white));
+    font-weight: 900;
+  }
+
+  .home-title::after {
+    content: url('/images/icon-arrow-down.svg');
+    display: block;
+    padding-top: 10%;
+  }
+
+  .section {
+    border: 1px solid black;
+    text-align: center;
+    row-gap: 2rem;
+  }
+
+  
