@@ -23,6 +23,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 /* Remove default margin */
@@ -53,7 +54,6 @@ html:focus-within {
 /* Set core body defaults */
 body {
   min-height: 100vh;
-  width: 100vw;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   text-align: center;
