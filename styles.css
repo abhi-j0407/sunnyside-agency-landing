@@ -121,17 +121,17 @@ select {
   .title {
     font-family: var(--ff-title);
     color: hsl(var(--clr-title-blue));
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: 900;
-    line-height: 3rem;
+    line-height: 2rem;
     padding-inline: 5rem;
   }
 
   .content {
     font-family: var(--ff-content);
     color: hsl(var(--clr-content-blue));
-    font-size: 1.25rem;
-    padding-inline: 2rem;
+    font-size: 1.125rem;
+    padding-inline: 1.5rem;
   }
 
   /* ---------------------------------------------- */
@@ -157,7 +157,7 @@ select {
   }
 
   #home {
-    background: url('./images/mobile/image-header.jpg') no-repeat center bottom;
+    background: url(./images/mobile/image-header.jpg) no-repeat center bottom;
     background-size: cover;
     height: 100vh;
   }
@@ -169,15 +169,16 @@ select {
   }
 
   .home-title {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-family: var(--ff-title);
     letter-spacing: 0.45rem;
     color:hsl(var(--clr-white));
     font-weight: 900;
+    padding-inline: 1.5rem;
   }
 
   .home-title::after {
-    content: url('./images/icon-arrow-down.svg');
+    content: url(./images/icon-arrow-down.svg);
     display: block;
     padding-top: 10%;
   }
@@ -193,7 +194,7 @@ select {
   }
 
   .graphic-photo {
-    height: 100vh;
+    height: 75vh;
     flex-direction: column;
     justify-content: end;
     padding-bottom: 15%;
@@ -201,12 +202,12 @@ select {
   }
 
   #graphic-design {
-    background: url('./images/mobile/image-graphic-design.jpg') no-repeat center top;
+    background: url(./images/mobile/image-graphic-design.jpg) no-repeat center top;
     background-size: cover;
   }
 
   #photography {
-    background: url('./images/mobile/image-photography.jpg') no-repeat center top;
+    background: url(./images/mobile/image-photography.jpg) no-repeat center top;
     background-size: cover;
   }
 
@@ -224,8 +225,8 @@ select {
 
   .testimonials-heading {
     color: hsl(var(--clr-subheading-grey));
-    font-size: 1.25rem;
-    letter-spacing: 0.5rem;
+    font-size: 1.2rem;
+    letter-spacing: 0.25rem;
     padding-inline: 0;
   }
 
@@ -238,17 +239,18 @@ select {
 
   .testimonial-card > img {
     border-radius: 50%;
-    width: 25%;
+    width: 22%;
   }
 
   .testimonial-card > p {
     font-family: var(--ff-content);
-    padding-inline: 4rem;
+    padding-inline: 1.5rem;
   }
 
   .testimonial-card span {
     display: block;
     font-size: 1.5rem;
+    padding-inline: 0;
   }
 
   .post {
@@ -270,6 +272,7 @@ select {
   #footer * {
     color: hsl(var(--clr-graphic-cyan));
     text-decoration: none;
+    padding-inline: 1rem;
   }
 
   .footer-logo {
@@ -279,6 +282,10 @@ select {
   .social-links {
     padding-block: 3rem;
     justify-content: center;
+  }
+
+  .social-links > * {
+    padding-inline: 0rem !important;
   }
 
   .content > img {
