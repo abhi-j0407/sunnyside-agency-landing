@@ -125,7 +125,7 @@ select {
     font-size: 1.6rem;
     font-weight: 900;
     line-height: 2rem;
-    padding-inline: 5rem;
+    padding-inline: 4.5rem;
   }
 
   .content {
@@ -195,7 +195,7 @@ select {
   }
 
   .graphic-photo {
-    height: 75vh;
+    height: 80vh;
     flex-direction: column;
     justify-content: end;
     padding-bottom: 15%;
