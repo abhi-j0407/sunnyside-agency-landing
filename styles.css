@@ -157,7 +157,7 @@ select {
   }
 
   #home {
-    background: url(/images/mobile/image-header.jpg) no-repeat center bottom;
+    background: url('./images/mobile/image-header.jpg') no-repeat center bottom;
     background-size: cover;
     height: 100vh;
   }
@@ -177,7 +177,7 @@ select {
   }
 
   .home-title::after {
-    content: url('/images/icon-arrow-down.svg');
+    content: url('./images/icon-arrow-down.svg');
     display: block;
     padding-top: 10%;
   }
@@ -201,12 +201,12 @@ select {
   }
 
   #graphic-design {
-    background: url('/images/mobile/image-graphic-design.jpg') no-repeat center top;
+    background: url('./images/mobile/image-graphic-design.jpg') no-repeat center top;
     background-size: cover;
   }
 
   #photography {
-    background: url('/images/mobile/image-photography.jpg') no-repeat center top;
+    background: url('./images/mobile/image-photography.jpg') no-repeat center top;
     background-size: cover;
   }
 
